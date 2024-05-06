@@ -1,6 +1,6 @@
 # Install_Interwild
 
-[Interwild](https://github.com/facebookresearch/InterWild){:target="_blank"} 논문의 구현 모델을 설치하고 Fisheye camera로 Webcam demo를 돌리기 위한 레포입니다.
+[Interwild](https://github.com/facebookresearch/InterWild) 논문의 구현 모델을 설치하고 Fisheye camera로 Webcam demo를 돌리기 위한 레포입니다.
 
 ## Requirements
 ```
@@ -38,12 +38,12 @@ conda install pytorch3d -c pytorch3d
 conda install --yes --file conda_requirements.txt
 pip install -r requirements.txt
 ```
-[Pytorch](https://pytorch.org/get-started/previous-versions/){:target="_blank"} >= 2.0.1가 필요합니다.  
+[Pytorch](https://pytorch.org/get-started/previous-versions/) >= 2.0.1가 필요합니다.  
 
 ## Demo
-1. [Interwild](https://github.com/facebookresearch/InterWild){:target="_blank"}를 Clone 받습니다.
+1. [Interwild](https://github.com/facebookresearch/InterWild) 를 Clone 받습니다.
 2. 'Install_Interwild_directory/interwild'의 fisheye_undist.py,fisheye_webcam.py 파일을 'InterWild_directory/demo'에 위치시킵니다.
-3. [Demo 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#demo){:target="_blank"}에서 Model weight를 다운로드 하거나, [Test 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#test){:target="_blank"}에서 여러 Dataset으로 Pretrained된 weight를 다운로드 합니다.
+3. [Demo 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#demo)에서 Model weight를 다운로드 하거나, [Test 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#test)에서 여러 Dataset으로 Pretrained된 weight를 다운로드 합니다.
 4. 다운로드한 Weight를 'InterWild_Directory/demo'에 위치시킵니다.
 5. 'InterWild_Directory/demo'로 이동합니다.
 6. ```python fisheye_webcam.py --gpu 0```으로 실행합니다.
