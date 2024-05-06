@@ -1,0 +1,4 @@
+tqdm
+numpy==1.23.0
+kornia
+plyfile
