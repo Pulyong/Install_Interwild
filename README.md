@@ -40,14 +40,6 @@ pip install -r requirements.txt
 ```
 [Pytorch](https://pytorch.org/get-started/previous-versions/) >= 2.0.1가 필요합니다.  
 
-## Demo
-1. [Interwild](https://github.com/facebookresearch/InterWild) 를 Clone 받습니다.
-2. 'Install_Interwild_directory/interwild'의 fisheye_undist.py,fisheye_webcam.py 파일을 'InterWild_directory/demo'에 위치시킵니다.
-3. [Demo 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#demo)에서 Model weight를 다운로드 하거나, [Test 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#test)에서 여러 Dataset으로 Pretrained된 weight를 다운로드 합니다.
-4. 다운로드한 Weight를 'InterWild_Directory/demo'에 위치시킵니다.
-5. 'InterWild_Directory/demo'로 이동합니다.
-6. ```python fisheye_webcam.py --gpu 0```으로 실행합니다.
-
 ## Directory
 ### Install_Interwild Directory
 ```
@@ -78,7 +70,7 @@ Install_Interwild
 
 다음과 같이 Interwild Directory에 파일을 옮깁니다.
 ```
-Interwild Directory
+Interwild_Directory
 |-- data
 |-- demo
 |   ├── snapshot_6.pth
@@ -88,3 +80,11 @@ Interwild Directory
 |-- main
 |-- output
 ```
+## Demo
+1. [Interwild](https://github.com/facebookresearch/InterWild) 를 Clone 받습니다.
+2. 'Install_Interwild_directory/interwild'의 fisheye_undist.py,fisheye_webcam.py 파일을 'InterWild_directory/demo'에 위치시킵니다.
+3. [Demo 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#demo)에서 Model weight를 다운로드 하거나, [Test 링크](https://github.com/facebookresearch/InterWild?tab=readme-ov-file#test)에서 여러 Dataset으로 Pretrained된 weight를 다운로드 합니다.
+4. 다운로드한 Weight를 'InterWild_Directory/demo'에 위치시킵니다.
+5. 'InterWild_Directory/demo'로 이동합니다.
+6. ```python fisheye_webcam.py --gpu 0```으로 실행합니다.
+7. ```python fisheye_webcam.py --gpu 0 --save_frame True --img_path 'save_folder'``` --save_frame을 True로 설정하고 --img_path를 설정하면 해당 폴더에 프레임을 저장 할 수 있습니다.
